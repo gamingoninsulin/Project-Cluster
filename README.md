@@ -1,5 +1,5 @@
 <div align="center">
- <a href="https://gamingoninsulin.github.io/Project-Cluster/">
-  <h1>WEBSITE</h1>  
- </a>
+ <h1>
+ <a href="https://gamingoninsulin.github.io/Project-Cluster/">WEBSITE</a>
+ </h1>
 </div>
