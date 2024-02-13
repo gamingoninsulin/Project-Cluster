@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Cluster!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-------------------------------------HEADER-STYLES--------------------------------------------->
+    <style>
+      .card {
+        background-color: cadetblue;
+        border: 2px solid green;
+        color: black;
+      }
+      .imgsize {
+        width:  20vw;
+        height: 20vw;
+        object-fit: cover;
+      }
+      .linkcolor {
+        color: blue;
+      }
+      .newscolor {
+        color: black;
+      }
+    </style>
+    <!-------------------------------------HEADER-STYLES--------------------------------------------->
   </head>
   <body class="has-background-success-light">
    
-    <!----------------------------------------------------------------------------------->
+    <!-------------------------------------HEADER---------------------------------------------->
 
     <section class="hero is-info">
       <div class="hero-body">
@@ -19,11 +39,11 @@
       </div>
     </section>
 
-    <!----------------------------------------------------------------------------------->
+    <!-------------------------------------NAVBAR---------------------------------------------->
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="../index.html">
+        <a class="navbar-item" href="./index.html">
           <img src="./assets/image/cluster.png" alt="Cluster">
         </a>
     
@@ -36,7 +56,7 @@
     
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">    
-          <a class="navbar-item" href="../index.html">
+          <a class="navbar-item" href="./index.html">
             Projects
           </a>
           
@@ -44,7 +64,7 @@
             Linktree
           </a>   
           
-          <a class="navbar-item is-active" href="about.html">
+          <a class="navbar-item is-active" href="./pages/about.html">
             About Us
           </a>
 
@@ -64,25 +84,52 @@
       </div>
     </nav>
 
-    <!----------------------------------------------------------------------------------->
+     <!-------------------------------------ROW-PROJECTS---------------------------------------------->
 
     <div class="columns">
       <div class="column">
         <div class="card">
           <div class="card-content">
-            <h2 class="title">EatYourVegtablesBoy</h2>
+            <h2 class="title" id="EatYourVegtablesBoy">EatYourVegtables</h2>
             <h3 class="subtitle">Author: GamingOnInsulin</h3>
-            <img src="./assets/image/fabric/minecraft_eyvb.png" alt="placeholder" />
+            <img class="imgsize" src="./assets/image/fabric/vegtable.png"/>
           </div>
           <footer class="card-footer">
             <div class="card-footer-item">
               <a href="https://github.com/gamingoninsulin/EatYourVegetablesBoy/archive/refs/heads/master.zip" target="_blank" class="button is-primary">
+                Download &nbsp;
                 <i class="fa-solid fa-download"></i>
               </a>
             </div>
 
             <div class="card-footer-item">
               <a href="https://github.com/gamingoninsulin/EatYourVegetablesBoy" target="_blank" class="button is-info">
+                Information &nbsp;
+                <i class="fa-solid fa-circle-info"></i>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h2 class="title" id="CraftWithLogs">CraftWithLogs</h2>
+            <h3 class="subtitle">Author: GamingOnInsulin</h3>
+            <img class="imgsize" src="./assets/image/datapack/CraftWithLogs.png" alt="CraftWithLogs Datapack"/>
+          </div>
+          <footer class="card-footer">
+            <div class="card-footer-item">
+              <a href="https://github.com/gamingoninsulin/CraftWithLogs/releases/download/Release/CraftWithLogs-1.0.1-1.20.X.zip" class="button is-primary">
+                Download &nbsp;
+                <i class="fa-solid fa-download"></i>
+              </a>
+            </div>
+
+            <div class="card-footer-item">
+              <a href="https://github.com/gamingoninsulin/CraftWithLogs" class="button is-info">
+                Information &nbsp;
                 <i class="fa-solid fa-circle-info"></i>
               </a>
             </div>
@@ -95,17 +142,19 @@
           <div class="card-content">
             <h2 class="title">Placeholder:</h2>
             <h3 class="subtitle">Author</h3>
-            <img src="./assets/image/placeholder.png" alt="placeholder" />
+            <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
           </div>
           <footer class="card-footer">
             <div class="card-footer-item">
               <a href="#" class="button is-primary">
+                Download &nbsp;
                 <i class="fa-solid fa-download"></i>
               </a>
             </div>
 
             <div class="card-footer-item">
               <a href="#" class="button is-info">
+                Information &nbsp;
                 <i class="fa-solid fa-circle-info"></i>
               </a>
             </div>
@@ -118,40 +167,19 @@
           <div class="card-content">
             <h2 class="title">Placeholder:</h2>
             <h3 class="subtitle">Author</h3>
-            <img src="./assets/image/placeholder.png" alt="placeholder" />
+            <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
           </div>
           <footer class="card-footer">
             <div class="card-footer-item">
               <a href="#" class="button is-primary">
+                Download &nbsp;
                 <i class="fa-solid fa-download"></i>
               </a>
             </div>
 
             <div class="card-footer-item">
               <a href="#" class="button is-info">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-            </div>
-          </footer>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <div class="card-content">
-            <h2 class="title">Placeholder:</h2>
-            <h3 class="subtitle">Author</h3>
-            <img src="./assets/image/placeholder.png" alt="placeholder" />
-          </div>
-          <footer class="card-footer">
-            <div class="card-footer-item">
-              <a href="#" class="button is-primary">
-                <i class="fa-solid fa-download"></i>
-              </a>
-            </div>
-
-            <div class="card-footer-item">
-              <a href="#" class="button is-info">
+                Information &nbsp;
                 <i class="fa-solid fa-circle-info"></i>
               </a>
             </div>
@@ -160,7 +188,7 @@
       </div>
     </div>
 
-    <!----------------------------------------------------------------------------------->
+     <!-------------------------------------ROW-PROJECTS---------------------------------------------->
 
     <div class="columns">
       <div class="column">
@@ -168,17 +196,19 @@
           <div class="card-content">
             <h2 class="title">Placeholder:</h2>
             <h3 class="subtitle">Author</h3>
-            <img src="./assets/image/placeholder.png" alt="placeholder" />
+            <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
           </div>
           <footer class="card-footer">
             <div class="card-footer-item">
               <a href="#" class="button is-primary">
+                Download &nbsp;
                 <i class="fa-solid fa-download"></i>
               </a>
             </div>
 
             <div class="card-footer-item">
               <a href="#" class="button is-info">
+                Information &nbsp;
                 <i class="fa-solid fa-circle-info"></i>
               </a>
             </div>
@@ -191,17 +221,19 @@
         <div class="card-content">
           <h2 class="title">Placeholder:</h2>
           <h3 class="subtitle">Author</h3>
-          <img src="./assets/image/placeholder.png" alt="placeholder" />
+          <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
         </div>
         <footer class="card-footer">
           <div class="card-footer-item">
             <a href="#" class="button is-primary">
+              Download &nbsp;
               <i class="fa-solid fa-download"></i>
             </a>
           </div>
 
           <div class="card-footer-item">
             <a href="#" class="button is-info">
+              Information &nbsp;
               <i class="fa-solid fa-circle-info"></i>
             </a>
           </div>
@@ -214,17 +246,19 @@
         <div class="card-content">
           <h2 class="title">Placeholder:</h2>
           <h3 class="subtitle">Author</h3>
-          <img src="./assets/image/placeholder.png" alt="placeholder" />
+          <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
         </div>
         <footer class="card-footer">
           <div class="card-footer-item">
             <a href="#" class="button is-primary">
+              Download &nbsp;
               <i class="fa-solid fa-download"></i>
             </a>
           </div>
 
           <div class="card-footer-item">
             <a href="#" class="button is-info">
+              Information &nbsp;
               <i class="fa-solid fa-circle-info"></i>
             </a>
           </div>
@@ -237,17 +271,19 @@
         <div class="card-content">
           <h2 class="title">Placeholder:</h2>
           <h3 class="subtitle">Author</h3>
-          <img src="./assets/image/placeholder.png" alt="placeholder" />
+          <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
         </div>
         <footer class="card-footer">
           <div class="card-footer-item">
             <a href="#" class="button is-primary">
+              Download &nbsp;
               <i class="fa-solid fa-download"></i>
             </a>
           </div>
 
           <div class="card-footer-item">
             <a href="#" class="button is-info">
+              Information &nbsp;
               <i class="fa-solid fa-circle-info"></i>
             </a>
           </div>
@@ -256,7 +292,7 @@
     </div>
   </div>
 
-  <!----------------------------------------------------------------------------------->
+  <!-------------------------------------ROW-PROJECTS---------------------------------------------->
     
    <div class="columns">
     <div class="column">
@@ -264,17 +300,19 @@
         <div class="card-content">
           <h2 class="title">Placeholder:</h2>
           <h3 class="subtitle">Author</h3>
-          <img src="./assets/image/placeholder.png" alt="placeholder" />
+          <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
         </div>
         <footer class="card-footer">
           <div class="card-footer-item">
             <a href="#" class="button is-primary">
+              Download &nbsp;
               <i class="fa-solid fa-download"></i>
             </a>
           </div>
 
           <div class="card-footer-item">
             <a href="#" class="button is-info">
+              Information &nbsp;
               <i class="fa-solid fa-circle-info"></i>
             </a>
           </div>
@@ -286,17 +324,19 @@
       <div class="card-content">
         <h2 class="title">Placeholder:</h2>
         <h3 class="subtitle">Author</h3>
-        <img src="./assets/image/placeholder.png" alt="placeholder" />
+        <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
       </div>
       <footer class="card-footer">
         <div class="card-footer-item">
           <a href="#" class="button is-primary">
+            Download &nbsp;
             <i class="fa-solid fa-download"></i>
           </a>
         </div>
 
         <div class="card-footer-item">
           <a href="#" class="button is-info">
+            Information &nbsp;
             <i class="fa-solid fa-circle-info"></i>
           </a>
         </div>
@@ -309,17 +349,19 @@
       <div class="card-content">
         <h2 class="title">Placeholder:</h2>
         <h3 class="subtitle">Author</h3>
-        <img src="./assets/image/placeholder.png" alt="placeholder" />
+        <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
       </div>
       <footer class="card-footer">
         <div class="card-footer-item">
           <a href="#" class="button is-primary">
+            Download &nbsp;
             <i class="fa-solid fa-download"></i>
           </a>
         </div>
 
         <div class="card-footer-item">
           <a href="#" class="button is-info">
+            Information &nbsp;
             <i class="fa-solid fa-circle-info"></i>
           </a>
         </div>
@@ -332,17 +374,19 @@
       <div class="card-content">
         <h2 class="title">Placeholder:</h2>
         <h3 class="subtitle">Author</h3>
-        <img src="./assets/image/placeholder.png" alt="placeholder" />
+        <img  class="imgsize" src="./assets/image/placeholder.png" alt="placeholder" />
       </div>
       <footer class="card-footer">
         <div class="card-footer-item">
           <a href="#" class="button is-primary">
+            Download &nbsp;
             <i class="fa-solid fa-download"></i>
           </a>
         </div>
 
         <div class="card-footer-item">
           <a href="#" class="button is-info">
+            Information &nbsp;
             <i class="fa-solid fa-circle-info"></i>
           </a>
         </div>
@@ -351,19 +395,29 @@
   </div>
 </div>
 
-<!----------------------------------------------------------------------------------->
+<!-------------------------------------NEWS---------------------------------------------->
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child notification is-info">
             <div class="content">
               <p class="title">Latest News:</p>
+              <!-- EatYourVegtables -->
               <article class="notification is-success">
-                <p>
-                  New Mod for minecraft 1.20.1 FABRIC
+                <p class="newscolor">
+                  New Mod for minecraft 1.20.1 FABRIC:
+                  &nbsp; <span class="linkcolor"><a href="#EatYourVegtablesBoy">EatYourVegetables</a></span>
                 </p>
               </article>
-            </div>
+
+              <!-- CraftWithLogs -->
+              <article class="notification is-success">
+                  <p class="newscolor">
+                    New Datapack for minecraft 1.20.4:
+                    &nbsp; <span class="linkcolor"><a href="#CraftWithLogs">CraftWithLogs</a></span>
+                  </p>
+              </article>
+          </div>
         </article>
       </div>
       <div class="tile is-vertical is-8">
@@ -374,7 +428,7 @@
       </div>
     </div>
 
-    <!----------------------------------------------------------------------------------->
+    <!-----------------------------------FOOTER------------------------------------------------>
 
     <footer class="footer ">
       <div class="content has-text-centered">
@@ -400,7 +454,7 @@
       </div>
     </footer>
 
-    <!----------------------------------------------------------------------------------->
+    <!--------------------------------------JS-LINKS--------------------------------------------->
 
     <script
       src="https://kit.fontawesome.com/8060454e96.js"
@@ -408,5 +462,8 @@
     </script>
     <script src="assets/js/navbar-toggle.js">
     </script>
+    
+    <!----------------------------------------------------------------------------------->
+
   </body>
 </html>
